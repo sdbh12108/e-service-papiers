@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services - E-Service Administratif</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>E-Service Administratif</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <p>Découvrez tous les services administratifs que nous proposons.</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="services-list">
+            <div class="container">
+                <h2>Services disponibles</h2>
+                
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Certificats de travail</h3>
+                        <p>Nos certificats de travail officiels contiennent toutes les informations nécessaires sur votre période d'emploi, votre poste et vos responsabilités. Document signé numériquement et juridiquement valable.</p>
+                        <p><strong>Délai :</strong> Disponible immédiatement</p>
+                        <p><strong>Format :</strong> PDF sécurisé</p>
+                        <a href="https://app.box.com/s/example-link-certificat" class="btn" target="_blank">
+                            <i class="fas fa-download"></i> Télécharger le modèle
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Attestations de stage</h3>
+                        <p>Document officiel attestant de la réalisation d'un stage, incluant la période, les missions effectuées et les compétences acquises. Idéal pour les dossiers académiques et professionnels.</p>
+                        <p><strong>Délai :</strong> 24 heures ouvrées</p>
+                        <p><strong>Format :</strong> PDF sécurisé</p>
+                        <a href="https://app.box.com/s/example-link-attestation" class="btn" target="_blank">
+                            <i class="fas fa-download"></i> Télécharger le modèle
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Duplicatas de diplôme</h3>
+                        <p>Copie certifiée conforme de votre diplôme original. Ce document est officiellement reconnu et peut être utilisé comme l'original pour toutes vos démarches administratives.</p>
+                        <p><strong>Délai :</strong> 3-5 jours ouvrés</p>
+                        <p><strong>Format :</strong> PDF sécurisé ou impression physique</p>
+                        <a href="https://app.box.com/s/example-link-diplome" class="btn" target="_blank">
+                            <i class="fas fa-download"></i> Télécharger un exemple
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="form" class="request-form">
+            <div class="container">
+                <h2>Formulaire de demande personnalisée</h2>
+                <form id="document-request">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="document-type">Type de document</label>
+                        <select id="document-type" name="document-type" required>
+                            <option value="">-- Sélectionnez --</option>
+                            <option value="certificat">Certificat de travail</option>
+                            <option value="attestation">Attestation de stage</option>
+                            <option value="diplome">Duplicata de diplôme</option>
+                            <option value="autre">Autre (préciser)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="other-document">Si autre, précisez</label>
+                        <input type="text" id="other-document" name="other-document">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reference">Référence (si applicable)</label>
+                        <input type="text" id="reference" name="reference">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Informations supplémentaires</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="urgent">Demande urgente</label>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="urgent" name="urgent">
+                            <span class="checkbox-label">Traitement prioritaire (24h)</span>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-large">Envoyer la demande</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>E-Service Administratif</h3>
+                    <p>Plateforme de gestion des documents administratifs</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> contact@e-service-admin.fr</p>
+                    <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 E-Service Administratif. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
