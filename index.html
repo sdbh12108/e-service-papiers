@@ -2,27 +2,112 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Service de Gestion des Papiers Administratifs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Service Administratif</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body style="font-family: Arial, sans-serif; text-align: center; margin-top: 50px;">
-    <h1>Bienvenue sur notre E-Service</h1>
-    <p>Gérez vos demandes de documents administratifs facilement.</p>
+<body>
+    <header>
+        <div class="container">
+            <h1>E-Service Administratif</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
 
-    <h2>Documents Disponibles :</h2>
-    <ul style="list-style: none;">
-        <li>
-            <a href="https://app.box.com/folder/320274346987" target="_blank">Demander un Certificat de Travail</a>
-        </li>
-        <li>
-            <a href="https://app.box.com/folder/320271186805" target="_blank">Demander une Attestation de Stage</a>
-        </li>
-        <li>
-            <a href="https://app.box.com/folder/320273495654" target="_blank">Demander un Duplicata de Diplôme</a>
-        </li>
-    </ul>
+    <section class="hero">
+        <div class="container">
+            <h2>Accès facile à vos documents administratifs</h2>
+            <p>Notre plateforme vous permet d'accéder rapidement aux documents administratifs dont vous avez besoin.</p>
+        </div>
+    </section>
 
-    <footer style="margin-top: 50px;">
-        <p>&copy; 2025 E-Service Papiers Administratifs</p>
+    <main>
+        <section class="documents">
+            <div class="container">
+                <h2>Documents disponibles</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Certificats de travail</h3>
+                        <p>Téléchargez votre certificat de travail officiel.</p>
+                        <a href="https://app.box.com/s/example-link-certificat" class="btn" target="_blank">
+                            <i class="fas fa-download"></i> Télécharger
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Attestations de stage</h3>
+                        <p>Obtenez votre attestation de stage validée.</p>
+                        <a href="https://app.box.com/s/example-link-attestation" class="btn" target="_blank">
+                            <i class="fas fa-download"></i> Télécharger
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Duplicatas de diplôme</h3>
+                        <p>Recevez un duplicata officiel de votre diplôme.</p>
+                        <a href="https://app.box.com/s/example-link-diplome" class="btn" target="_blank">
+                            <i class="fas fa-download"></i> Télécharger
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="request">
+            <div class="container">
+                <h2>Demande de document personnalisée</h2>
+                <p>Vous ne trouvez pas le document dont vous avez besoin ? Faites une demande personnalisée.</p>
+                <a href="services.html#form" class="btn btn-large">Formulaire de demande</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>E-Service Administratif</h3>
+                    <p>Plateforme de gestion des documents administratifs</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> contact@e-service-admin.fr</p>
+                    <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 E-Service Administratif. Tous droits réservés.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
